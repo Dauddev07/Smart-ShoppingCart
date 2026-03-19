@@ -20,22 +20,6 @@ This project demonstrates real-world frontend concepts including dynamic UI upda
 
 ---
 
-## 🖥️ Demo
-
-Run locally using a live server:
-
-```bash
-http://127.0.0.1:5500/index.html
-```
-
-Or deploy online using platforms like:
-
-* Netlify
-* Vercel
-* GitHub Pages
-
----
-
 ## 📂 Project Structure
 
 ```
@@ -112,23 +96,13 @@ Once checkout is triggered:
 
 ## 🌍 Deployment
 
-You can easily deploy this project using:
-
-### Netlify
-
-1. Drag & drop project folder
-2. Get instant live URL
-
-### Vercel
-
-1. Connect GitHub repo
-2. Auto deploy
+live at:https://dauddev07.github.io/Smart-ShoppingCart/
 
 ---
 
 ## 🙌 Author
 
-**SmartCart Pro Project**
+**Smart-ShoppingCart Project**
 Built for learning and showcasing frontend development skills.
 
 ---
