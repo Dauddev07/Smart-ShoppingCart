@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart-ShoppingCart</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <h2>🛒 Smart-ShoppingCart</h2>
+      <button id="theme-toggle">🌙</button>
+    </nav>
+
+    <div id="alert-box" class="alert hidden">
+      ⚠️ Please add items to cart first
+    </div>
+
+    <main class="app-container">
+      <div class="card">
+        <h1>Smart-ShoppingCart</h1>
+
+        <!-- 🔥 CART SECTION -->
+        <div id="cart-section">
+          <form id="add-item-form" class="form">
+            <input
+              type="text"
+              id="item-name"
+              placeholder="Item name"
+              required
+            />
+            <input
+              type="number"
+              id="item-price"
+              placeholder="Price"
+              step="0.01"
+              min="0"
+              required
+            />
+            <input
+              type="number"
+              id="item-qty"
+              placeholder="Qty"
+              min="1"
+              required
+            />
+            <button type="submit">Add Item</button>
+          </form>
+
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th>Price</th>
+                  <th>Qty</th>
+                  <th>Subtotal</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody id="cart-body"></tbody>
+            </table>
+          </div>
+
+          <div class="checkout">
+            <button id="calculate-btn">Checkout</button>
+          </div>
+        </div>
+
+        <!-- 🔥 CHECKOUT SECTION -->
+        <div id="checkout-section" class="hidden">
+          <h2>Order Summary</h2>
+          <ul id="summary-list"></ul>
+          <h3 id="summary-total"></h3>
+
+          <button id="new-order-btn">Start New Order</button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Copyright © Daud.dev All Rights Reserved</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
